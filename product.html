@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="info">
+      <div class="images">
+        <img
+          class="main-img"
+          width="400"
+          src=""
+          alt=""
+        />
+        <div class="icons">
+  
+        </div>
+      </div>
+      <div class="details">
+        <p class="product-vendor headline">Marmeto</p>
+        <p class="product-title">Embrace Sideboard</p>
+        <hr />
+        <div class="discount">
+          <h1 class="price">12999.00</h1>
+          <p class="precentage-off">35% off</p>
+        </div>
+        <p class="compare-at-price">19999</p>
+        <hr />
+        <form>
+          <span class="headline">Choose a Color</span>
+          <div class="color-selector">
+          <!-- Dynamic color Data  -->
+          </div>
+          <hr />
+          <span class="headline">Choose a Size</span>
+          <div class="size-selector">
+            <!-- Dynamic Size Data -->
+          </div>
+          <div class="btn">
+            <div class="quantity">
+              <button
+                class="update-quantity"
+                id="decrease-count"
+                onclick="decreaseCount()"
+                disabled="true"
+              >
+                <i class="fas fa-minus"></i>
+              </button>
+              <span id="count">0</span>
+              <button
+                class="update-quantity"
+                id="increase-count"
+                onclick="increaseCount()"
+              >
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <button type="submit"  class="add-to-cart" onclick="submitForm()">
+              <i class="fas fa-shopping-bag"></i>Add To Cart
+            </button>
+          </div>
+        </form>
+        <div class="message">Product is added to your cart</div>
+        <hr />
+        <div class="description">
+          The Embrace Sideboard is a stylish wear. With a top cloth designed to
+          provide superior protection and look great, this storage solution is
+          both functional and attractive. It fits seamlessly into any home
+          decor, with clean lines and a timeless look. Crafted from premium
+          materials for a combination of style, durability, and reliability.
+        </div>
+      </div>
+    </div>
+    <script src="app.js">
+    </script>
+  </body>
+</html>
